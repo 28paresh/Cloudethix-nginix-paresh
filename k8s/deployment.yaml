@@ -10,13 +10,13 @@ spec:
   selector:
     matchLabels:
       app: nginx
-    template:
-      metadata: 
-        labels:
-          app: nginx
-      spec:
-        containers:
-        - name: cloudethix-nginx-paresh
-          image: paresh28/cloudethix-nginix-paresh:v1
-          ports:
-          - containerPort: 80
+  template:
+    metadata: 
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: cloudethix-nginx-paresh
+        image: paresh28/cloudethix-nginix-paresh:v1
+        ports:
+        - containerPort: 80
